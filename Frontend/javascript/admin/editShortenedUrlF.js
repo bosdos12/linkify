@@ -9,7 +9,7 @@ const editShortenedUrlF = (linkShurlID) => {
 
     let newLink = document.getElementById(`shurlinput_${linkShurlID}`).value;
 
-    fetch("http://192.168.0.160/lf/editl", {
+    fetch("https://www.dicards.co/lf/editl", {
         method: 'POST',
         headers: {
         'Accept': 'application/json',

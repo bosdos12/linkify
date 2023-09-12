@@ -1,7 +1,7 @@
 
 
 const autoLoginRequestF = (username, password, admin=false) => {
-    fetch('http://192.168.0.160/lf/login', {
+    fetch('https://www.dicards.co/lf/login', {
         method: 'POST',
         headers: {
             'Accept': 'application/json',

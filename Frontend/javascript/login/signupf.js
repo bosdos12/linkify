@@ -16,7 +16,7 @@ const signupf = () => {
 
     // Running a simple client side authentication;
     userCredentialsInputControlF(username, password, confirmationpassword).then(() => {
-        fetch('http://192.168.0.160/lf/signup', {
+        fetch('https://www.dicards.co/lf/signup', {
         method: 'POST',
         headers: {
             'Accept': 'application/json',

@@ -6,7 +6,7 @@ const deleteShortenedUrlF = (linkShurlID) => {
     let username = localStorage.getItem("username");
     let password = localStorage.getItem("password");
 
-    fetch("http://192.168.0.160/lf/deletel", {
+    fetch("https://www.dicards.co/lf/deletel", {
         method: 'POST',
         headers: {
         'Accept': 'application/json',
