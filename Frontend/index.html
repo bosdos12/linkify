@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Linkify - By Adak Celina</title>
+    <link rel="stylesheet" href="style.css">
+
+
+    <!-- Javascript Imports -->
+    <script src="./javascript/userCredentialsInputControlF.js"></script>
+    <script src="./javascript/login/loginRequestF.js"></script>
+    <script src="./javascript/login/autoLoginF.js"></script>
+    <script src="./javascript/login/autoLoginRequestF.js"></script>
+    <!-- Checking if the user is already logged in. -->
+    <script>autoLoginF()</script>
+    <script src="./javascript/login/loginF.js"></script>
+
+</head>
+<body>
+    <div id="logininputscontainer">
+        <img src="./assets/linkifydarklogo.png" alt="" id="loginlogo">
+        <input type="text" name="" id="usernameentry" class="textinput" placeholder="username">
+        <p class="invalidcredentials" id="usernamemessage"></p>
+        <input type="text" name="" id="passwordentry" class="textinput" placeholder="password">
+        <p class="invalidcredentials" id="passwordmessage"></p>
+        <button class="button" onclick="loginButtonClickF()">Login</button>
+    </div>
+    <p id="footertext">Don't have an account? <span id="footertextnav" onclick="window.location.href = './signup.html'">Sign up!</span></p>
+</body>
+</html>

@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Linkify - By Adak Celina</title>
+    <link rel="stylesheet" href="admin.css">
+
+    <script src="./javascript/login/loginRequestF.js"></script>
+    <script src="./javascript/login/autoLoginF.js"></script>
+    <!-- Checking if the user is already logged in. -->
+    <script>autoLoginF(true)</script>
+    <script src="./javascript/admin/deleteShortenedUrlF.js"></script>
+    <script src="./javascript/admin/editShortenedUrlF.js"></script>
+    <script src="./javascript/admin/addNewLinkF.js"></script>
+    <script src="./javascript/admin/logOutF.js"></script>
+
+</head>
+<body>
+    <div id="headerDiv">
+        <div class="headerHalf">
+            <div id="logoImg"></div>
+        </div>
+        <div class="headerHalf" style="display: flex; flex-direction: row; justify-content: space-evenly;">
+            <button class="button" onclick="addNewLinkF()">Add new link</button>
+            <button class="button" onclick="logOutF()">Log out</button>
+        </div>
+    </div>
+
+    
+    <div id="mainContentsDiv">
+        
+        <!-- <div class="linksHolderDivs">
+            <div class="inputsHolderDiv">
+                <input placeholder="Full URL" type="text" class="urlEntryInput">
+                <input placeholder="Shortened URL" type="text" class="urlEntryInput" readonly onclick="navigator.clipboard.writeText('hiiiii!');alert('URL copied to clipboard!')" style="cursor: pointer;" title="copy to clipboard.">
+
+            </div>
+            <div class="buttonsHolderDiv">
+                <button class="button" style="margin: 0px; width: 44%;">Delete</button>
+                <button class="button" style="margin: 0px; width: 44%;">Copy QR</button>
+            </div>
+        </div>
+        <br> -->
+
+    </div>
+</body>
+</html>
+
+
+
+
+<script src="./javascript/admin/loadAllLinksOfUserF.js"></script>
+<script>
+
+    // Loading all links of the user
+    loadAllLinksOfUserF();
+
+</script>
