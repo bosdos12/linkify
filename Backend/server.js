@@ -13,10 +13,6 @@ app.use(express.json());
 const cors = require("cors");
 app.use(cors());
 
-// EJS
-app.set("view engine", "ejs");
-app.set('views', path.join(__dirname, './views'));
-
 
 const PORT = process.env.PORT || 80;
 const SERVERIP = "192.168.1.34";
