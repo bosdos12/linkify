@@ -15,7 +15,7 @@ app.use(cors());
 
 
 const PORT = process.env.PORT || 80;
-const SERVERIP = "192.168.1.34";
+const SERVERIP = "ipv4 for localhost envs";
 const DBURI = "YOUR MONGODB URL";
 
 
