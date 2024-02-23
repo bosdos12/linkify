@@ -38,7 +38,3 @@ require("./linkify/addNewLinkF.js")(app);
 require("./linkify/editLinkRequestF.js")(app);
 require("./linkify/deleteLinkRequest.js")(app);
 require("./linkify/redirectToShortenedURLF.js")(app);
-
-
-// Hello Motherfuckerrrrrrr
-
